@@ -5419,3 +5419,258 @@ Completed 200 OK in 33ms (Views: 1.1ms | ActiveRecord: 3.0ms)
 Completed 200 OK in 393ms (Views: 0.5ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/fetch_moon" for ::1 at 2019-09-04 10:49:57 -0700
+Started GET "/signs/1" for ::1 at 2019-09-04 10:49:57 -0700
+Processing by SignsController#show as */*
+  Parameters: {"id"=>"1"}
+Processing by RetrogradesController#fetch_moon as */*
+  [1m[36mSign Load (1.6ms)[0m  [1m[34mSELECT  "signs".* FROM "signs" WHERE "signs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/signs_controller.rb:9
+  [1m[36mHoroscope Load (2.9ms)[0m  [1m[34mSELECT "horoscopes".* FROM "horoscopes" WHERE "horoscopes"."sign_id" = $1[0m  [["sign_id", 1]]
+  ↳ app/controllers/signs_controller.rb:10
+  [1m[36mRetrograde Load (1.2ms)[0m  [1m[34mSELECT "retrogrades".* FROM "retrogrades" WHERE "retrogrades"."sign_id" = $1[0m  [["sign_id", 1]]
+  ↳ app/controllers/signs_controller.rb:11
+Completed 200 OK in 47ms (Views: 2.3ms | ActiveRecord: 6.7ms)
+
+
+Completed 200 OK in 481ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signs/1" for ::1 at 2019-09-04 10:51:23 -0700
+Started GET "/fetch_moon" for ::1 at 2019-09-04 10:51:23 -0700
+Processing by SignsController#show as */*
+  Parameters: {"id"=>"1"}
+Processing by RetrogradesController#fetch_moon as */*
+  [1m[36mSign Load (1.5ms)[0m  [1m[34mSELECT  "signs".* FROM "signs" WHERE "signs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/signs_controller.rb:9
+  [1m[36mHoroscope Load (2.1ms)[0m  [1m[34mSELECT "horoscopes".* FROM "horoscopes" WHERE "horoscopes"."sign_id" = $1[0m  [["sign_id", 1]]
+  ↳ app/controllers/signs_controller.rb:10
+  [1m[36mRetrograde Load (2.3ms)[0m  [1m[34mSELECT "retrogrades".* FROM "retrogrades" WHERE "retrogrades"."sign_id" = $1[0m  [["sign_id", 1]]
+  ↳ app/controllers/signs_controller.rb:11
+Completed 200 OK in 63ms (Views: 2.5ms | ActiveRecord: 43.9ms)
+
+
+Completed 200 OK in 433ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/fetch_moon" for ::1 at 2019-09-04 10:51:57 -0700
+Started GET "/signs/1" for ::1 at 2019-09-04 10:51:57 -0700
+Processing by SignsController#show as */*
+  Parameters: {"id"=>"1"}
+Processing by RetrogradesController#fetch_moon as */*
+  [1m[36mSign Load (0.6ms)[0m  [1m[34mSELECT  "signs".* FROM "signs" WHERE "signs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/signs_controller.rb:9
+  [1m[36mHoroscope Load (44.0ms)[0m  [1m[34mSELECT "horoscopes".* FROM "horoscopes" WHERE "horoscopes"."sign_id" = $1[0m  [["sign_id", 1]]
+  ↳ app/controllers/signs_controller.rb:10
+  [1m[36mRetrograde Load (1.0ms)[0m  [1m[34mSELECT "retrogrades".* FROM "retrogrades" WHERE "retrogrades"."sign_id" = $1[0m  [["sign_id", 1]]
+  ↳ app/controllers/signs_controller.rb:11
+Completed 200 OK in 54ms (Views: 1.8ms | ActiveRecord: 45.6ms)
+
+
+Completed 200 OK in 498ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/fetch_moon" for ::1 at 2019-09-04 10:54:10 -0700
+Started GET "/signs/1" for ::1 at 2019-09-04 10:54:10 -0700
+Processing by RetrogradesController#fetch_moon as */*
+Processing by SignsController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mSign Load (0.6ms)[0m  [1m[34mSELECT  "signs".* FROM "signs" WHERE "signs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/signs_controller.rb:9
+  [1m[36mHoroscope Load (0.6ms)[0m  [1m[34mSELECT "horoscopes".* FROM "horoscopes" WHERE "horoscopes"."sign_id" = $1[0m  [["sign_id", 1]]
+  ↳ app/controllers/signs_controller.rb:10
+  [1m[36mRetrograde Load (2.1ms)[0m  [1m[34mSELECT "retrogrades".* FROM "retrogrades" WHERE "retrogrades"."sign_id" = $1[0m  [["sign_id", 1]]
+  ↳ app/controllers/signs_controller.rb:11
+Completed 200 OK in 11ms (Views: 1.1ms | ActiveRecord: 3.3ms)
+
+
+Completed 200 OK in 426ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/fetch_moon" for ::1 at 2019-09-04 11:12:50 -0700
+Started GET "/signs/1" for ::1 at 2019-09-04 11:12:50 -0700
+Processing by SignsController#show as */*
+Processing by RetrogradesController#fetch_moon as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mSign Load (1.0ms)[0m  [1m[34mSELECT  "signs".* FROM "signs" WHERE "signs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/signs_controller.rb:9
+  [1m[36mHoroscope Load (2.2ms)[0m  [1m[34mSELECT "horoscopes".* FROM "horoscopes" WHERE "horoscopes"."sign_id" = $1[0m  [["sign_id", 1]]
+  ↳ app/controllers/signs_controller.rb:10
+  [1m[36mRetrograde Load (1.0ms)[0m  [1m[34mSELECT "retrogrades".* FROM "retrogrades" WHERE "retrogrades"."sign_id" = $1[0m  [["sign_id", 1]]
+  ↳ app/controllers/signs_controller.rb:11
+Completed 200 OK in 59ms (Views: 3.1ms | ActiveRecord: 4.7ms)
+
+
+Completed 200 OK in 420ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signs/1" for ::1 at 2019-09-04 11:15:13 -0700
+Started GET "/fetch_moon" for ::1 at 2019-09-04 11:15:13 -0700
+Processing by RetrogradesController#fetch_moon as */*
+Processing by SignsController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mSign Load (1.4ms)[0m  [1m[34mSELECT  "signs".* FROM "signs" WHERE "signs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/signs_controller.rb:9
+  [1m[36mHoroscope Load (3.3ms)[0m  [1m[34mSELECT "horoscopes".* FROM "horoscopes" WHERE "horoscopes"."sign_id" = $1[0m  [["sign_id", 1]]
+  ↳ app/controllers/signs_controller.rb:10
+  [1m[36mRetrograde Load (0.9ms)[0m  [1m[34mSELECT "retrogrades".* FROM "retrogrades" WHERE "retrogrades"."sign_id" = $1[0m  [["sign_id", 1]]
+  ↳ app/controllers/signs_controller.rb:11
+Completed 200 OK in 18ms (Views: 1.5ms | ActiveRecord: 6.0ms)
+
+
+Completed 200 OK in 590ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signs/1" for ::1 at 2019-09-04 11:15:31 -0700
+Started GET "/fetch_moon" for ::1 at 2019-09-04 11:15:31 -0700
+Processing by RetrogradesController#fetch_moon as */*
+Processing by SignsController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mSign Load (0.9ms)[0m  [1m[34mSELECT  "signs".* FROM "signs" WHERE "signs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/signs_controller.rb:9
+  [1m[36mHoroscope Load (0.7ms)[0m  [1m[34mSELECT "horoscopes".* FROM "horoscopes" WHERE "horoscopes"."sign_id" = $1[0m  [["sign_id", 1]]
+  ↳ app/controllers/signs_controller.rb:10
+  [1m[36mRetrograde Load (0.8ms)[0m  [1m[34mSELECT "retrogrades".* FROM "retrogrades" WHERE "retrogrades"."sign_id" = $1[0m  [["sign_id", 1]]
+  ↳ app/controllers/signs_controller.rb:11
+Completed 200 OK in 16ms (Views: 1.5ms | ActiveRecord: 2.3ms)
+
+
+Completed 200 OK in 498ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/fetch_moon" for ::1 at 2019-09-04 11:15:42 -0700
+Started GET "/signs/1" for ::1 at 2019-09-04 11:15:42 -0700
+Processing by RetrogradesController#fetch_moon as */*
+Processing by SignsController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mSign Load (1.3ms)[0m  [1m[34mSELECT  "signs".* FROM "signs" WHERE "signs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/signs_controller.rb:9
+  [1m[36mHoroscope Load (1.6ms)[0m  [1m[34mSELECT "horoscopes".* FROM "horoscopes" WHERE "horoscopes"."sign_id" = $1[0m  [["sign_id", 1]]
+  ↳ app/controllers/signs_controller.rb:10
+  [1m[36mRetrograde Load (2.9ms)[0m  [1m[34mSELECT "retrogrades".* FROM "retrogrades" WHERE "retrogrades"."sign_id" = $1[0m  [["sign_id", 1]]
+  ↳ app/controllers/signs_controller.rb:11
+Completed 200 OK in 17ms (Views: 2.0ms | ActiveRecord: 5.8ms)
+
+
+Completed 200 OK in 398ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/fetch_moon" for ::1 at 2019-09-04 11:19:47 -0700
+Started GET "/signs/1" for ::1 at 2019-09-04 11:19:47 -0700
+Processing by RetrogradesController#fetch_moon as */*
+Processing by SignsController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mSign Load (0.6ms)[0m  [1m[34mSELECT  "signs".* FROM "signs" WHERE "signs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/signs_controller.rb:9
+  [1m[36mHoroscope Load (1.1ms)[0m  [1m[34mSELECT "horoscopes".* FROM "horoscopes" WHERE "horoscopes"."sign_id" = $1[0m  [["sign_id", 1]]
+  ↳ app/controllers/signs_controller.rb:10
+  [1m[36mRetrograde Load (2.1ms)[0m  [1m[34mSELECT "retrogrades".* FROM "retrogrades" WHERE "retrogrades"."sign_id" = $1[0m  [["sign_id", 1]]
+  ↳ app/controllers/signs_controller.rb:11
+Completed 200 OK in 15ms (Views: 3.5ms | ActiveRecord: 3.8ms)
+
+
+Completed 200 OK in 529ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/fetch_moon" for ::1 at 2019-09-04 11:59:22 -0700
+Started GET "/signs/1" for ::1 at 2019-09-04 11:59:22 -0700
+Processing by RetrogradesController#fetch_moon as */*
+Processing by SignsController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mSign Load (1.2ms)[0m  [1m[34mSELECT  "signs".* FROM "signs" WHERE "signs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/signs_controller.rb:9
+  [1m[36mHoroscope Load (3.6ms)[0m  [1m[34mSELECT "horoscopes".* FROM "horoscopes" WHERE "horoscopes"."sign_id" = $1[0m  [["sign_id", 1]]
+  ↳ app/controllers/signs_controller.rb:10
+  [1m[36mRetrograde Load (3.0ms)[0m  [1m[34mSELECT "retrogrades".* FROM "retrogrades" WHERE "retrogrades"."sign_id" = $1[0m  [["sign_id", 1]]
+  ↳ app/controllers/signs_controller.rb:11
+Completed 200 OK in 46ms (Views: 3.4ms | ActiveRecord: 8.2ms)
+
+
+Completed 200 OK in 622ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/fetch_moon" for ::1 at 2019-09-04 13:31:04 -0700
+Started GET "/signs/1" for ::1 at 2019-09-04 13:31:04 -0700
+Processing by SignsController#show as */*
+Processing by RetrogradesController#fetch_moon as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mSign Load (2.8ms)[0m  [1m[34mSELECT  "signs".* FROM "signs" WHERE "signs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/signs_controller.rb:9
+  [1m[36mHoroscope Load (1.7ms)[0m  [1m[34mSELECT "horoscopes".* FROM "horoscopes" WHERE "horoscopes"."sign_id" = $1[0m  [["sign_id", 1]]
+  ↳ app/controllers/signs_controller.rb:10
+  [1m[36mRetrograde Load (1.0ms)[0m  [1m[34mSELECT "retrogrades".* FROM "retrogrades" WHERE "retrogrades"."sign_id" = $1[0m  [["sign_id", 1]]
+  ↳ app/controllers/signs_controller.rb:11
+Completed 200 OK in 130ms (Views: 2.5ms | ActiveRecord: 5.9ms)
+
+
+Completed 200 OK in 576ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/fetch_moon" for ::1 at 2019-09-04 13:31:30 -0700
+Started GET "/signs/1" for ::1 at 2019-09-04 13:31:30 -0700
+Processing by RetrogradesController#fetch_moon as */*
+Processing by SignsController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mSign Load (1.3ms)[0m  [1m[34mSELECT  "signs".* FROM "signs" WHERE "signs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/signs_controller.rb:9
+  [1m[36mHoroscope Load (0.5ms)[0m  [1m[34mSELECT "horoscopes".* FROM "horoscopes" WHERE "horoscopes"."sign_id" = $1[0m  [["sign_id", 1]]
+  ↳ app/controllers/signs_controller.rb:10
+  [1m[36mRetrograde Load (0.5ms)[0m  [1m[34mSELECT "retrogrades".* FROM "retrogrades" WHERE "retrogrades"."sign_id" = $1[0m  [["sign_id", 1]]
+  ↳ app/controllers/signs_controller.rb:11
+Completed 200 OK in 9ms (Views: 1.6ms | ActiveRecord: 2.4ms)
+
+
+Completed 200 OK in 432ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/fetch_moon" for ::1 at 2019-09-04 13:43:12 -0700
+Started GET "/signs/1" for ::1 at 2019-09-04 13:43:12 -0700
+Processing by SignsController#show as */*
+Processing by RetrogradesController#fetch_moon as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mSign Load (1.0ms)[0m  [1m[34mSELECT  "signs".* FROM "signs" WHERE "signs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/signs_controller.rb:9
+  [1m[36mHoroscope Load (1.4ms)[0m  [1m[34mSELECT "horoscopes".* FROM "horoscopes" WHERE "horoscopes"."sign_id" = $1[0m  [["sign_id", 1]]
+  ↳ app/controllers/signs_controller.rb:10
+  [1m[36mRetrograde Load (0.8ms)[0m  [1m[34mSELECT "retrogrades".* FROM "retrogrades" WHERE "retrogrades"."sign_id" = $1[0m  [["sign_id", 1]]
+  ↳ app/controllers/signs_controller.rb:11
+Completed 200 OK in 38ms (Views: 1.7ms | ActiveRecord: 3.5ms)
+
+
+Completed 200 OK in 430ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/fetch_moon" for ::1 at 2019-09-04 13:43:29 -0700
+Started GET "/signs/1" for ::1 at 2019-09-04 13:43:29 -0700
+Processing by RetrogradesController#fetch_moon as */*
+Processing by SignsController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mSign Load (45.3ms)[0m  [1m[34mSELECT  "signs".* FROM "signs" WHERE "signs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/signs_controller.rb:9
+  [1m[36mHoroscope Load (0.6ms)[0m  [1m[34mSELECT "horoscopes".* FROM "horoscopes" WHERE "horoscopes"."sign_id" = $1[0m  [["sign_id", 1]]
+  ↳ app/controllers/signs_controller.rb:10
+  [1m[36mRetrograde Load (0.5ms)[0m  [1m[34mSELECT "retrogrades".* FROM "retrogrades" WHERE "retrogrades"."sign_id" = $1[0m  [["sign_id", 1]]
+  ↳ app/controllers/signs_controller.rb:11
+Completed 200 OK in 55ms (Views: 2.6ms | ActiveRecord: 46.4ms)
+
+
+Completed 200 OK in 424ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/fetch_moon" for ::1 at 2019-09-04 13:50:15 -0700
+Started GET "/signs/1" for ::1 at 2019-09-04 13:50:15 -0700
+Processing by RetrogradesController#fetch_moon as */*
+Processing by SignsController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mSign Load (0.9ms)[0m  [1m[34mSELECT  "signs".* FROM "signs" WHERE "signs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/signs_controller.rb:9
+  [1m[36mHoroscope Load (1.1ms)[0m  [1m[34mSELECT "horoscopes".* FROM "horoscopes" WHERE "horoscopes"."sign_id" = $1[0m  [["sign_id", 1]]
+  ↳ app/controllers/signs_controller.rb:10
+  [1m[36mRetrograde Load (1.0ms)[0m  [1m[34mSELECT "retrogrades".* FROM "retrogrades" WHERE "retrogrades"."sign_id" = $1[0m  [["sign_id", 1]]
+  ↳ app/controllers/signs_controller.rb:11
+Completed 200 OK in 50ms (Views: 2.5ms | ActiveRecord: 32.5ms)
+
+
+Completed 200 OK in 1293ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+
+
