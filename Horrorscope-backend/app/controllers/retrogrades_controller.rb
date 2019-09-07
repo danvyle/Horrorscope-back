@@ -5,13 +5,6 @@ class RetrogradesController < ApplicationController
     render json: retrogrades
   end
 
-  def fetch_moon
-    url = "https://isitfullmoon.com/api.php"
-    resp = RestClient.get(url)
-    moon_info = JSON.parse(resp)
-    render json: moon_info["isitfullmoon"]
-  end
-
   def show
     retrograde = Retrograde.find(params[:name])
     render json: retrograde
