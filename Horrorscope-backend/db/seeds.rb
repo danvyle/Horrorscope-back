@@ -5,6 +5,19 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+capricorn = Sign.create(name:"capricorn", sign_id: 1)
+aquarius = Sign.create(name:"aquarius", sign_id: 2)
+pisces = Sign.create(name:"pisces", sign_id: 3)
+aries = Sign.create(name:"aries", sign_id: 4)
+taurus = Sign.create(name:"taurus", sign_id: 5)
+gemini = Sign.create(name:"gemini", sign_id: 6)
+cancer = Sign.create(name:"cancer", sign_id: 7)
+leo = Sign.create(name:"leo", sign_id: 8)
+virgo = Sign.create(name:"virgo", sign_id: 9)
+libra = Sign.create(name:"libra", sign_id: 10)
+scorpio = Sign.create(name:"scorpio", sign_id: 11)
+sagittarius = Sign.create(name:"sagittarius", sign_id: 12)
+
 
 # ------------------Retrogrades------------------
 mercury_capricorn = Retrograde.create(name: "mercury", explanation: "Uh oh, progress has slowed to a halt and your master plan has hit a snag. You'd rather do just about anything than sit there twiddling your thumbs when there's real work to be done. Having to depend on other people (like the IT guy) to finish their job before you can restart yours is excruciating. Plus, as a cardinal sign, you're used to taking the reins and doing it yourself, so not being in control of your own success or failure drives you nuts. Find some zen as you press reset.", sign_id:1)
@@ -115,15 +128,3 @@ uranus_sagittarius = Retrograde.create(name: "uranus", explanation: "Uranus’ e
 
 #---------------Signs----------------------
 #
-# capricorn = Sign.create(name:"capricorn", sign_id: 1)
-# aquarius = Sign.create(name:"aquarius", sign_id: 2)
-# pisces = Sign.create(name:"pisces", sign_id: 3)
-# aries = Sign.create(name:"aries", sign_id: 4)
-# taurus = Sign.create(name:"taurus", sign_id: 5)
-# gemini = Sign.create(name:"gemini", sign_id: 6)
-# cancer = Sign.create(name:"cancer", sign_id: 7)
-# leo = Sign.create(name:"leo", sign_id: 8)
-# virgo = Sign.create(name:"virgo", sign_id: 9)
-# libra = Sign.create(name:"libra", sign_id: 10)
-# scorpio = Sign.create(name:"scorpio", sign_id: 11)
-# sagittarius = Sign.create(name:"sagittarius", sign_id: 12)
