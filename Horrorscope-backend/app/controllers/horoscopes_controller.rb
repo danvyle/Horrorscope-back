@@ -1,3 +1,5 @@
+require_relative '../lib/api_communicator.rb'
+
 class HoroscopesController < ApplicationController
 
   def index

@@ -10,13 +10,6 @@ class RetrogradesController < ApplicationController
     render json: retrograde
   end
 
-  # def fetch_moon
-  #   url = "https://isitfullmoon.com/api.php"
-  #   resp = RestClient.get(url)
-  #   moon_info = JSON.parse(resp)
-  #   render json: moon_info["isitfullmoon"]
-  # end
-
   def fetch_books
     url = "https://www.googleapis.com/books/v1/volumes?q=self+help&maxResults=8"
     resp = RestClient.get(url)
@@ -33,7 +26,8 @@ class RetrogradesController < ApplicationController
         :errors => retrograde.errors.full_messages
       }
     end
-
   end
+
+
 
 end

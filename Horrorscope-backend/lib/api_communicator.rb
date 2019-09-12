@@ -3,13 +3,6 @@ require 'json'
 
 class GetHoroscopes
 
-  # def self.fetch_moon
-  #   url = "https://isitfullmoon.com/api.php"
-  #   resp = RestClient.get(url)
-  #   moon_info = Json.parse(resp)
-  #
-  # end
-
   def self.fetch_capricorn_horoscope
     url = "http://ohmanda.com/api/horoscope/capricorn/"
     resp = RestClient.get(url)
@@ -94,14 +87,7 @@ class GetHoroscopes
     Horoscope.find_or_create_by(date: horoscope_info["date"], daily_horoscope: horoscope_info["horoscope"], sign_id: 12)
   end
 
-  def self.set_interval
-    Thread.new do
-      loop do
-        puts "hi"
-        sleep 5
-      end
-    end
-  end
+
 
 
 end
